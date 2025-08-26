@@ -6,82 +6,155 @@
     <title>About Us - Knowledge Barter</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="font-sans">
+
+    <!-- Navigation -->
     <nav class="w-full flex items-center justify-between px-6 py-4 shadow-sm bg-white">
-        <div class="text-violet-600 text-3xl font-bold">
+        <div class="text-violet-600 text-3xl font-bold tracking-wide">
             Knowledge Barter
         </div>
     </nav>
-    <section class="bg-gray-50 pt-20 pb-12 text-center">
-        <h1 class="text-4xl font-bold text-violet-600 mb-4">About Us</h1>
-        <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+
+    <!-- Hero / About Section -->
+    <section class="bg-gradient-to-r from-violet-50 to-white pt-20 pb-12 text-center">
+        <h1 class="text-4xl font-bold text-violet-600 mb-4 tracking-wide">About Us</h1>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
             At <span class="font-semibold">Knowledge Barter</span>, we believe in the power of skill sharing. 
             Our mission is to create a platform where people can connect, teach, and learn from each other — 
             without the barrier of money. We are here to make learning more accessible, collaborative, and fun.
         </p>
     </section>
+
+    <hr class="border-t-2 border-gray-200 my-12 max-w-4xl mx-auto">
+
+    <!-- Mission Section -->
     <section class="py-12 px-6 text-center">
-        <h2 class="text-3xl font-semibold mb-6 text-violet-600 border-b-4 border-violet-400 inline-block pb-1">Our Mission</h2>
-        <p class="text-gray-700 max-w-3xl mx-auto">
+        <h2 class="text-3xl font-semibold mb-6 text-violet-600 border-b-4 border-violet-400 inline-block pb-1 tracking-wide">Our Mission</h2>
+        <p class="text-gray-600 max-w-3xl mx-auto">
             We aim to connect learners and teachers from all walks of life, enabling them to exchange skills 
             in a supportive and engaging environment. Whether you’re a coder, artist, language enthusiast, 
             or musician — Knowledge Barter gives you a place to share your passion and gain new ones.
         </p>
     </section>
+
+    <hr class="border-t-2 border-gray-200 my-12 max-w-4xl mx-auto">
+
+    <!-- Team Section -->
     <section class="bg-gray-50 py-12 px-6">
-        <h2 class="text-3xl font-semibold text-center text-violet-600 mb-10">Meet Our Team</h2>
+        <h2 class="text-3xl font-semibold text-center text-violet-600 mb-10 tracking-wide">Meet Our Team</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             
-            <div class="bg-white rounded-lg p-6 shadow-md text-center group relative overflow-hidden">
+            <div class="bg-white rounded-lg p-6 shadow-md text-center group relative overflow-hidden 
+                        hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <img src="https://ui-avatars.com/api/?name=Jashan+Mukheja&background=7c3aed&color=fff" 
+                     class="w-24 h-24 mx-auto rounded-full border-4 border-violet-200 mb-4" alt="Jashan Mukheja">
                 <h3 class="text-xl font-semibold text-gray-900">Jashan Mukheja</h3>
+                
             </div>
-           
-            <div class="bg-white rounded-lg p-6 shadow-md text-center group relative overflow-hidden">
+
+            <div class="bg-white rounded-lg p-6 shadow-md text-center group relative overflow-hidden 
+                        hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <img src="https://ui-avatars.com/api/?name=Bhimanshu+Singh&background=7c3aed&color=fff" 
+                     class="w-24 h-24 mx-auto rounded-full border-4 border-violet-200 mb-4" alt="Bhimanshu Singh">
                 <h3 class="text-xl font-semibold text-gray-900">Bhimanshu Singh</h3>
+                
             </div>
-            <div class="bg-white rounded-lg p-6 shadow-md text-center group relative overflow-hidden">
+
+            <div class="bg-white rounded-lg p-6 shadow-md text-center group relative overflow-hidden 
+                        hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <img src="https://ui-avatars.com/api/?name=Aryan+Sanghi&background=7c3aed&color=fff" 
+                     class="w-24 h-24 mx-auto rounded-full border-4 border-violet-200 mb-4" alt="Aryan Sanghi">
                 <h3 class="text-xl font-semibold text-gray-900">Aryan Sanghi</h3>
+                
             </div>
-            
-            <div class="bg-white rounded-lg p-6 shadow-md text-center group relative overflow-hidden">
+
+            <div class="bg-white rounded-lg p-6 shadow-md text-center group relative overflow-hidden 
+                        hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <img src="https://ui-avatars.com/api/?name=Chirag+Khosla&background=7c3aed&color=fff" 
+                     class="w-24 h-24 mx-auto rounded-full border-4 border-violet-200 mb-4" alt="Chirag Khosla">
                 <h3 class="text-xl font-semibold text-gray-900">Chirag Khosla</h3>
+                
             </div>
+
         </div>
     </section>
 
-   
+    <hr class="border-t-2 border-gray-200 my-12 max-w-4xl mx-auto">
+
+    <!-- Values Section -->
     <section class="py-12 px-6 text-center">
-        <h2 class="text-3xl font-semibold mb-6 text-violet-600 border-b-4 border-violet-400 inline-block pb-1">Our Values</h2>
-        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-semibold mb-6 text-violet-600 border-b-4 border-violet-400 inline-block pb-1 tracking-wide">Our Values</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-gray-600">
+            
             <div>
+                <div class="flex justify-center mb-2 text-violet-600">
+                    <!-- Collaboration Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                         viewBox="0 0 24 24" stroke="currentColor">
+                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                               d="M12 4v16m8-8H4"/>
+                    </svg>
+                </div>
                 <h3 class="text-xl font-bold mb-2 hover:text-violet-600 transition">Collaboration</h3>
                 <p>We grow together by sharing skills and supporting each other.</p>
             </div>
+
             <div>
+                <div class="flex justify-center mb-2 text-violet-600">
+                    <!-- Accessibility Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                         viewBox="0 0 24 24" stroke="currentColor">
+                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                               d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                    </svg>
+                </div>
                 <h3 class="text-xl font-bold mb-2 hover:text-violet-600 transition">Accessibility</h3>
                 <p>Learning should be open to everyone, regardless of background.</p>
             </div>
+
             <div>
+                <div class="flex justify-center mb-2 text-violet-600">
+                    <!-- Innovation Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                         viewBox="0 0 24 24" stroke="currentColor">
+                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                               d="M12 8v8m0-8l4 4m-4-4l-4 4"/>
+                    </svg>
+                </div>
                 <h3 class="text-xl font-bold mb-2 hover:text-violet-600 transition">Innovation</h3>
                 <p>We embrace creativity and new ways to connect learners worldwide.</p>
             </div>
+
         </div>
     </section>
 
-    
-    <footer class="bg-violet-600 text-white py-8 mt-10">
+    <hr class="border-t-2 border-gray-200 my-12 max-w-4xl mx-auto">
+
+    <!-- Call-to-Action Section -->
+    <section class="bg-violet-50 py-10 text-center">
+        <h2 class="text-2xl font-bold text-violet-700 mb-4">Join Knowledge Barter Today!</h2>
+        <a href="#" class="bg-violet-600 text-white px-6 py-3 rounded-lg font-semibold 
+                         hover:bg-violet-700 transition">
+            Get Started
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-violet-700 to-violet-500 text-white py-8 mt-10">
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between">
             <div class="mb-4 md:mb-0">
                 <h3 class="text-lg font-bold">Knowledge Barter</h3>
-                <p class="text-sm">© 2025 All rights reserved.</p>
+                <p class="text-sm opacity-90">© 2025 All rights reserved.</p>
             </div>
-            <div class="flex gap-4">
-                <a href="#" class="hover:underline">Privacy Policy</a>
-                <a href="#" class="hover:underline">Terms</a>
-                <a href="#" class="hover:underline">Help</a>
+            <div class="flex gap-6 text-sm">
+                <a href="#" class="hover:underline opacity-90 hover:opacity-100">Privacy Policy</a>
+                <a href="#" class="hover:underline opacity-90 hover:opacity-100">Terms</a>
+                <a href="#" class="hover:underline opacity-90 hover:opacity-100">Help</a>
             </div>
         </div>
     </footer>
 
 </body>
 </html>
+
+
