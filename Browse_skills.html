@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[url(/images/bg.png)] bg-cover bg-center flex flex-col min-h-screen">
+    <section id="Browse_skills" class="flex flex-col flex-grow">
+    <div class="bg-violet-600 w-full px-6 py-4 flex justify-center items-center">
+        <p class="font-bold text-white   text-xl ">Knowledge Barter</p>
+    </div>
+        <div class="flex justify-center items-center flex-col flex-grow pt-5 px-4">
+        <input type="text" class="border-2  w-full sm:w-[470px] rounded-md mx-2 border-purple-300 px-4" placeholder="Search by Skill">
+        <button class="px-10 py-2  mt-2  text-md rounded-md font-bold text-white bg-violet-500 hover:bg-violet-600">Search</button>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-6">
+            <div class="h-[180px] w-full sm:w-[300px] p-5 border-2  rounded-lg flex flex-col gap-3 bg-white">
+                <h1 class="font-bold text-xl text-violet-500">UI Design</h1>
+                <p>Learn modern UI/UX design with TailwindCSS.</p>
+                <button class="w-[100px] py-1 font-bold bg-violet-500 rounded-lg text-white hover:bg-violet-600">View</button>
+            </div>
+            <div class="h-[180px] w-full sm:w-[300px] p-5 border-2  rounded-lg flex flex-col gap-3 bg-white">
+                <h1 class="font-bold text-xl text-violet-500">DSA</h1>
+                <p>Master Data Structures & Algorithms.</p>
+                <button class="w-[100px] py-1 font-bold bg-violet-500 rounded-lg text-white hover:bg-violet-600">View</button>
+            </div>
+            <div class="h-[180px] w-full sm:w-[300px] p-5 border-2  rounded-lg flex flex-col gap-3 bg-white">
+                <h1 class="font-bold text-xl text-violet-500">Web Dev</h1>
+                <p>Full-stack web development with React and js.</p>
+                <button class="w-[100px] py-1 font-bold bg-violet-500 rounded-lg text-white hover:bg-violet-600">View</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="w-full">
+        <div class="bg-violet-600 px-6 py-4 ">
+            <div class="flex justify-between flex-col md:flex-row">
+            <div>
+            <h1 class="font-bold text-white text-lg">Knowledge Barter</h1>
+            <p class="text-white text-sm">© 2025 All rights reserved</p>
+        </div>
+        <div>
+            <div class="flex gap-2 text-white">
+            <a href="#" class="hover:underline"><p>Privacy Policy</p></a>
+            <a href="#" class="hover:underline"><p>Terms</p></a>
+            <a href="#" class="hover:underline"><p>Help</p></a>
+            </div>
+        </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
