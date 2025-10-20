@@ -1,5 +1,11 @@
-function filter(){
-    const input=document.getElementById("inp").value.trim().toLowerCase();
+function filter(categoryText){
+    let input;
+    if(categoryText){
+        input=categoryText.toLowerCase();
+    }
+    else{
+        input=document.getElementById("inp").value.trim().toLowerCase();
+    }
     const cards=document.getElementsByClassName("skill-card");
     const noresult=document.getElementById("noResults");
     let found=0;
@@ -19,4 +25,7 @@ function filter(){
     else{
         noresult.classList.add("hidden");
     }
+}
+function filterByCategory(category) {
+    filter(category);
 }
