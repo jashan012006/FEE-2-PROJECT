@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="Post_Skill.js"></script>
 </head>
 <body class="bg-[url(/images/bg.png)] bg-cover bg-center flex flex-col min-h-screen">
     <div class="bg-violet-600 w-full px-6 py-4 flex justify-center items-center">
@@ -12,9 +13,9 @@
     </div>
     <div class="flex justify-center items-center flex-col gap-5  flex-grow px-4">
         <h1 class="font-bold text-xl text-white">Create Skill Swap Card</h1>
-        <input type="text" class="border-2 border-gray-300 rounded-md w-full sm:w-[370px] px-4" placeholder="I can teach:">
-        <input type="text" class="border-2 border-gray-300 rounded-md w-full sm:w-[370px] px-4" placeholder="I want to learn:">
-        <button class="font-bold text-white border-2 border-purple-300 p-2 w-full sm:w-[280px]  rounded-md bg-gradient-to-r from-violet-500 to-purple-300 hover:bg-gradient-to-b from-violet-500 to-purple-300">Post Card</button>
+        <input type="text" id="teachInput" class="border-2 border-gray-300 rounded-md w-full sm:w-[370px] px-4" placeholder="I can teach:">
+        <input type="text" id="learnInput" class="border-2 border-gray-300 rounded-md w-full sm:w-[370px] px-4" placeholder="I want to learn:">
+        <button onclick="saveCard()" class="font-bold text-white border-2 border-purple-300 p-2 w-full sm:w-[280px]  rounded-md bg-gradient-to-r from-violet-500 to-purple-300 hover:bg-gradient-to-b from-violet-500 to-purple-300">Post Card</button>
     </div>
     <footer class="w-full">
         <div class="bg-violet-600 px-6 py-4">
