@@ -6,7 +6,7 @@
     <title>Log In</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex flex-col min-h-screen" style="background-image: url(bg.jpg);">
+<body class="bg-gray-100 flex flex-col min-h-screen" style="background-image: url('bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
     
     <header class="w-full bg-violet-600 py-4 shadow-md">
         <h1 class="text-center text-3xl font-bold text-white">Knowledge Barter</h1>
@@ -18,10 +18,11 @@
             <p class="text-2xl font-bold text-center">Log In</p>
             
             <div class="flex flex-col gap-3">
-                <input type="text" placeholder="Username" class="border p-2 rounded">
-                <input type="password" placeholder="Password" class="border p-2 rounded">
-                <button class="bg-violet-600 text-white rounded">Log In</button>
+                <input type="text" placeholder="Username" class="border p-2 rounded" id = "email">
+                <input type="password" placeholder="Password" class="border p-2 rounded" id = "password">
+                <button id = "login1" class="bg-violet-600 text-white rounded" onclick="handleLogin()">Log In</button>
             </div>
+            <p id="message"></p>
             
             
             <div class="flex justify-center gap-2 text-sm">
@@ -29,11 +30,13 @@
                 <a href="LOGIN_SIGNUP.HTML" class="text-blue-500">Sign Up</a>
             </div>
         </div>
+        
     </main>
 
     
     <footer class="w-full bg-violet-600 py-4 shadow-inner mt-auto">
         <p class="text-center text-white text-sm">© 2025 Knowledge Barter. All rights reserved.</p>
     </footer>
+    <script src="login.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <title>Sign Up</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex flex-col min-h-screen" style="background-image: url(bg.jpg);">
+<body class="bg-gray-100 flex flex-col min-h-screen" style="background-image: url('bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
     
     <header class="w-full bg-violet-600 py-4 shadow-md">
         <h1 class="text-center text-3xl font-bold text-white">Knowledge Barter</h1>
@@ -18,12 +18,12 @@
             <p class="text-2xl font-bold text-center">Sign Up</p>
             
             <div class="flex flex-col gap-3">
-                <input type="text" placeholder="Create Username" class="border p-2 rounded">
-                <input type="password" placeholder="Create Password" class="border p-2 rounded">
-                <input type="password" placeholder="Comfirm Password" class="border p-2 rounded">
-                <button class="bg-violet-600 text-white rounded">Sign Up</button>
+                <input type="text" placeholder="Create Username" class="border p-2 rounded" id = "signupEmail">
+                <input type="password" placeholder="Create Password" class="border p-2 rounded" id = "signupPassword">
+                <input type="password" placeholder="Comfirm Password" class="border p-2 rounded" id ="confirmPassword">
+                <button class="bg-violet-600 text-white rounded" onclick="handleRegistration()">Sign Up</button>
             </div>
-            
+            <p id="signupMessage"></p>
             <div class="flex justify-center gap-2 text-sm">
                 <p>Already have an account?</p>
                 <a href="login.html" class="text-blue-500">Log In</a>
@@ -34,5 +34,6 @@
     <footer class="w-full bg-violet-600 py-4 shadow-inner mt-auto">
         <p class="text-center text-white text-sm">© 2025 Knowledge Barter. All rights reserved.</p>
     </footer>
+    <script src = "sign_up.js"></script>
 </body>
 </html>
