@@ -13,7 +13,14 @@
     </div>
     <div class="flex justify-center items-center flex-col gap-5  flex-grow px-4">
         <h1 class="font-bold text-xl text-white">Create Skill Swap Card</h1>
+        <input type="text" id="nameInput" class="border-2 border-gray-300 rounded-md w-full sm:w-[370px] px-4" placeholder="Your Name">
         <input type="text" id="teachInput" class="border-2 border-gray-300 rounded-md w-full sm:w-[370px] px-4" placeholder="I can teach:">
+        <select id="levelSelect" class="border-2 border-gray-300 rounded-md w-full sm:w-[370px] px-4 bg-white">
+            <option value="" disabled selected>Select your skill level</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+        </select>
         <input type="text" id="learnInput" class="border-2 border-gray-300 rounded-md w-full sm:w-[370px] px-4" placeholder="I want to learn:">
         <button onclick="saveCard()" class="font-bold text-white border-2 border-purple-300 p-2 w-full sm:w-[280px]  rounded-md bg-gradient-to-r from-violet-500 to-purple-300 hover:bg-gradient-to-b from-violet-500 to-purple-300">Post Card</button>
     </div>
