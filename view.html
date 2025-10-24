@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>View Skill | Knowledge Barter</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen">
+  <header class="bg-indigo-600 text-white py-4 shadow-md">
+    <h1 class="text-2xl font-bold text-center">Knowledge Barter</h1>
+    <p class="text-center text-sm opacity-80">Find people who can teach your chosen skill</p>
+  </header>
+  <main class="max-w-5xl mx-auto p-6">
+    <h2 id="skillTitle" class="text-3xl font-bold text-center mb-8 text-indigo-700"></h2>
+    <div id="skillContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    </div>
+    <p id="noDataMsg" class="text-center text-gray-500 text-lg mt-10 hidden">
+      No one has registered to teach this skill yet 😔
+    </p>
+  </main>
+  <div class="text-center mt-8 mb-6">
+    <a href="browse-skill.html" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg shadow-md transition">
+      ← Back to Browse Skills
+    </a>
+  </div>
+  <script src="view.js"></script>
+
+</body>
+</html>
