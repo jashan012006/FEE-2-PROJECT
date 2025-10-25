@@ -30,7 +30,8 @@
         <span><p class="text-white mb-6">
             Find Peers. Share Knowledge. No money involved
         </p></span>
-        <a href="" class="bg-violet-500 text-blue px-6 py-3 rounded-full hover:bg-violet-600 transition">Get Started</a>
+        <button id="getStartedBtn" class="bg-violet-500 text-blue px-6 py-3 rounded-full hover:bg-violet-600 transition">Get Started</button>
+
     </section>
     <section class="py-8 px-6 text-center">
         <h2 class="mt-8 text-3xl font-semibold mb-8 text-white border-b-4 border-violet-400 inline-block pb-1">How it works</h2>
@@ -79,5 +80,18 @@
       </div>
     </div>
   </footer>
+  <script>
+  document.getElementById("getStartedBtn").addEventListener("click", () => {
+    const loggedInUser = localStorage.getItem("loggedInUser");
+
+    if (loggedInUser) {
+      window.location.href = "post_skill.html";
+    } else {
+      alert("Please login first to continue!");
+      window.location.href = "login.html";
+    }
+  });
+</script>
+
     </body>
 </html>
